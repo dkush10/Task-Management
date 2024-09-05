@@ -10,14 +10,21 @@
             {% csrf_token %}
 
             <div id="registerinput">
-                <label for="">Username</label>
-                <input type="text" name="username" placeholder="Username"><br><br>
+                <div class="redetails">
+                    <label for="">Username</label>
+                    <input type="text" name="username" placeholder="Username">
+                </div>
 
-                <label for="">Email</label>
-                <input type="emai" name="email" placeholder="Email"><br><br>
+                <div class="redetails">
+                    <label for="">Email</label>
+                    <input type="emai" name="email" placeholder="Email">
+                </div>
 
-                <label for="">Password</label>
-                <input type="password" name="password" placeholder="Password"><br><br>
+                <div class="redetails">
+                    <label for="">Password</label>
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+
             </div>
 
             <input id="submit" type="submit" value="register">

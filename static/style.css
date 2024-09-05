@@ -212,8 +212,10 @@ nav {
     }
 
     #submit {
-        margin-bottom: 20px;
-        padding: 6px 18px;
+        margin: 15px 0px;
+        padding: 4px 18px;
+        border-radius: 5px;
+        border: none;
     }
 
 }
@@ -225,6 +227,7 @@ nav {
     color: white;
     font-family: "Comfortaa", sans-serif;
     margin-top: 5rem;
+    padding-bottom: 15px;
 
     h1 {
         width: 70%;
@@ -236,18 +239,35 @@ nav {
     }
 
     #registerinput {
-        width: 50%;
+        width: 60%;
         margin: auto;
-        text-align: left;
+
+        .redetails {
+            background-color: none;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 15px 0px;
+
+            label {
+                width: 30%;
+                text-align: right;
+            }
+
+            input {
+                border-radius: 5px;
+
+            }
+        }
     }
 
-    input {
-        border-radius: 5px;
-    }
 
     #submit {
-        margin-bottom: 20px;
-        padding: 6px 18px;
+        margin: 15px 0px;
+        padding: 4px 18px;
+        border-radius: 5px;
+        border: none;
     }
 
 }
@@ -352,7 +372,6 @@ nav {
     }
 
     .tdelete {
-        /* font-size: 10px; */
 
         h1,
         h2 {
