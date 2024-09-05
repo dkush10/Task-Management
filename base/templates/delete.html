@@ -1,0 +1,22 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<div class="delete">
+    <h1>Delete</h1>
+
+    <div class="tdelete">
+        <h2>Id = {{a.id}}</h2>
+        <h2>Title = {{a.title}}</h2>
+        <h2>Description = {{a.desc}}</h2>
+
+        <form action="" method="POST">
+            {% csrf_token %}
+            <h3>Are you sure you want to delete?</h3>
+            <input type="submit" value="Confirm">
+        </form>
+        <a href="{% url 'home' %}"><button>Cancel</button></a></h2>
+    </div>
+</div>
+
+{% endblock content %}

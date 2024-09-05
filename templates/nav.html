@@ -1,0 +1,19 @@
+<nav>
+    <h2>TASK MANAGEMENT</h2>
+
+    <div id="nav_links">
+        {% if request.user.is_authenticated %}
+        <h4><a href="{% url 'home' %}">Home</a></h4>
+        <h4><a href="{% url 'addtask' %}">Add Task</a></h4>
+        <h4><a href="{% url 'history' %}">History</a></h4>
+        <h4><a href="{% url 'completed' %}">Completed</a></h4>
+        <h4><a href="{% url 'profile' %}">Profile({{request.user}})</a></h4>
+        <h4><a href="{% url 'contactus' %}">Contact Us</a></h4>
+        <h4><a href="{% url 'about' %}">About</a></h4>
+        <h4><a href="{% url 'logout_' %}">Logout</a></h4>
+        {% else %}
+        <h4><a href="{% url 'login_' %}">Login</a></h4>
+        <h4><a href="{% url 'register_' %}">Register</a></h4>
+        {% endif %}
+    </div>
+</nav>

@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<div class="details">
+    <h1>Task Details</h1>
+    <div class="tdetail">
+        <h2>Id = {{a.id}}</h2>
+        <h2>Title = {{a.title}}</h2>
+        <h2>Description = {{a.desc}}</h2>
+        <h2>Date = {{a.created_at|date:'j/M/Y'}}</h2>
+    </div>
+</div>
+
+{% endblock content %}

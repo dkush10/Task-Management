@@ -1,0 +1,35 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<div class="history">
+    <h1>History</h1>
+    <div id="all">
+        <a href="{% url 'restoreall' %}">Restore all</a>
+        <a href="{% url 'clearall' %}">Clear all</a>
+    </div>
+
+    <div class="history_head">
+        <h2 id="hid">Id</h2>
+        <h2 id="htitle">Title</h2>
+        <h2 id="hdesc">Desc</h2>
+        <h2 id="hdate">Date</h2>
+    </div>
+
+    {% for i in h %}
+
+    <div class="allhistory">
+        <h2 id="id">{{i.id}}</h2>
+        <h2 id="title">{{i.title}}</h2>
+        <h2 id="desc">{{i.desc|truncatewords:10}}</h2>
+        <h2 id="date">{{i.deleted_at|date:'j/M/Y'}}</h2>
+
+        <div class="historylinks">
+            <a href="{% url 'restore' i.id %}">Restore</a>
+            <a href="{% url 'historydelete' i.id %}">Delete</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}

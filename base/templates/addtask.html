@@ -1,0 +1,17 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div id="addtask">
+    <h1>Add Task</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label for="">Title</label>
+        <input type="text" name="title" required value="{{a.title}}"><br><br>
+        <label for="">Description</label>
+        <!-- <textarea name="desc" id="" required value="{{a.desc}}"></textarea><br><br> -->
+        <input type="text" name="desc" required value="{{a.desc}}"><br><br>
+        <input id="submit" type="submit" name="submit" id="">
+    </form>
+</div>
+
+{% endblock content %}

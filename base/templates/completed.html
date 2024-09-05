@@ -1,0 +1,32 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<div class="complete">
+    <h1>Completed Task</h1>
+    <a href="{% url 'completeclearall' %}">Clear all</a>
+
+    <div class="complete_head">
+        <h2 id="cid">Id</h2>
+        <h2 id="ctitle">Title</h2>
+        <h2 id="cdesc">Desc</h2>
+        <h2 id="cdate">Date</h2>
+    </div>
+
+    {% for i in c %}
+
+    <div class="allcompleted">
+        <h2 id="id">{{i.id}}</h2>
+        <h2 id="title">{{i.title}}</h2>
+        <h2 id="desc">{{i.desc|truncatewords:10}}</h2>
+        <h2 id="date">{{i.completed_at|date:'j/M/Y'}}</h2>
+
+        <div class="completedlinks">
+            <a href="{% url 'completedelete' i.id %}">Delete</a>
+        </div>
+    </div>
+
+    {% endfor %}
+</div>
+
+{% endblock content %}

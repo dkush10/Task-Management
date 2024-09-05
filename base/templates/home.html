@@ -1,0 +1,40 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<div class="home">
+    <h1>Welcome {{request.user}}</h2>
+        <h4><a href="{% url 'home' %}">All Task</a></h4>
+
+        <form action="">
+            <input id="search" type="text" name="q" placeholder="Search...">
+            <input id="searchbutton" type="submit" value="search">
+        </form>
+
+        <div class="task_head">
+            <h2 id="thid">Id</h2>
+            <h2 id="thtitle">Title</h2>
+            <h2 id="thdesc">Desc</h2>
+            <h2 id="thdate">Date</h2>
+        </div>
+
+        {% for i in a %}
+
+        <div class="alltask">
+            <h2 id="id">{{i.id}}</h2>
+            <h2 id="title">{{i.title}}</h2>
+            <h2 id="desc">{{i.desc|truncatewords:10}}</h2>
+            <h2 id="date">{{i.created_at|date:'j/M/Y'}}</h2>
+
+            <div class="homelinks">
+                <a href="{% url 'details' i.id %}">Details</a>
+                <a href="{% url 'edit' i.id %}">Edit</a>
+                <a href="{% url 'delete' i.id %}">Delete</a>
+                <a href="{% url 'complete' i.id %}">Complete</a>
+            </div>
+        </div>
+
+        {% endfor %}
+</div>
+
+{% endblock content %}

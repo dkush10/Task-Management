@@ -1,0 +1,893 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.873) 25%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.889) 95%), url(./images/tm3.jpg);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: 100% 800px;
+    font-family: "Comfortaa", sans-serif;
+    background-color: black;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    border-radius: 10px;
+    padding-top: 10px;
+
+    h2 {
+        font-family: "Bona Nova SC", serif;
+    }
+
+    #nav_links {
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: "Comfortaa", sans-serif;
+
+        h4 {
+            width: 15%;
+            text-align: center;
+            align-items: center;
+            padding: 0;
+        }
+
+        a {
+            color: white;
+            width: 100%;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.2s;
+        }
+
+        a:hover {
+            font-size: 20px;
+            transition: 0.2s;
+        }
+    }
+}
+
+.home {
+    /* background-color: rgb(156, 255, 255);s */
+    background-color: rgba(0, 0, 0, 0.821);
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    /* box-shadow: inset 1px 1px 10px black; */
+
+    h1 {
+        font-family: "Bona Nova SC", serif;
+    }
+
+    h4 {
+        a {
+            font-family: "Comfortaa", sans-serif;
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            color: rgb(186, 186, 186);
+        }
+
+    }
+
+    #search {
+        border-radius: 5px;
+    }
+
+    #searchbutton {
+        border-radius: 5px;
+        padding: 3px 10px;
+        background-color: rgba(255, 255, 255, 0.848);
+        font-family: "Comfortaa", sans-serif;
+    }
+
+    .task_head {
+        width: 90%;
+        margin: 10px 0px;
+        padding-top: 5px;
+        display: flex;
+        align-items: center;
+        font-family: "Bona Nova SC", serif;
+        background-color: rgba(255, 255, 255, 0.818);
+        color: black;
+        border-radius: 5px;
+        text-align: center;
+
+        #thid {
+            padding-left: 15px;
+            width: 5%;
+            font-size: 1.5rem;
+        }
+
+        #thtitle {
+            width: 22%;
+            font-size: 1.5rem;
+        }
+
+        #thdesc {
+            width: 25%;
+            font-size: 1.5rem;
+        }
+
+        #thdate {
+            width: 15%;
+            font-size: 1.5rem;
+        }
+    }
+
+    .alltask {
+        width: 90%;
+        margin: auto;
+        margin: 10px 0px;
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid white;
+        font-family: "Comfortaa", sans-serif;
+        text-align: center;
+        /* box-shadow: 7px 7px 17px rgb(93, 93, 93); */
+
+        #id {
+            padding-left: 15px;
+            width: 5%;
+            font-size: 1.2rem;
+        }
+
+        #title {
+            width: 30%;
+            font-size: 1.2rem;
+        }
+
+        #desc {
+            width: 30%;
+            font-size: 1rem;
+        }
+
+        #date {
+            width: 25%;
+            font-size: 1rem;
+        }
+
+        .homelinks {
+            margin: 10px 0px;
+            width: 40%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+            a {
+                background-color: rgba(255, 255, 255, 0.519);
+                margin: 0px 10px;
+                margin-bottom: 10px;
+                padding: 8px 14px;
+                border-radius: 10px;
+                text-decoration: none;
+                color: rgb(22, 22, 22);
+                font-size: 12px;
+            }
+
+            a:hover {
+                color: white;
+            }
+        }
+    }
+}
+
+.loginform {
+    width: 40%;
+    padding: 15px 10px;
+    background-color: rgba(0, 0, 0, 0.841);
+    border-radius: 10px;
+    color: white;
+    font-family: "Comfortaa", sans-serif;
+    margin-top: 5rem;
+
+    h1 {
+        width: 60%;
+        margin-top: 20px;
+        color: white;
+        padding-bottom: 5px;
+        border-bottom: 2px solid white;
+        font-family: "Bona Nova SC", serif;
+    }
+
+    input {
+        border-radius: 5px;
+    }
+
+    #submit {
+        margin-bottom: 20px;
+        padding: 6px 18px;
+    }
+
+}
+
+.register {
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.841);
+    border-radius: 10px;
+    color: white;
+    font-family: "Comfortaa", sans-serif;
+    margin-top: 5rem;
+
+    h1 {
+        width: 70%;
+        margin-top: 20px;
+        color: white;
+        padding-bottom: 5px;
+        border-bottom: 2px solid white;
+        font-family: "Bona Nova SC", serif;
+    }
+
+    #registerinput {
+        width: 50%;
+        margin: auto;
+        text-align: left;
+    }
+
+    input {
+        border-radius: 5px;
+    }
+
+    #submit {
+        margin-bottom: 20px;
+        padding: 6px 18px;
+    }
+
+}
+
+.about {
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.879);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 6rem;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
+
+    h2 {
+        font-family: "Bona Nova SC", serif;
+    }
+
+    p {
+        font-family: "Comfortaa", sans-serif;
+        padding: 20px;
+    }
+}
+
+#addtask {
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.734);
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 5rem;
+    color: white;
+    text-align: center;
+    font-family: "Comfortaa", sans-serif;
+
+    h1 {
+        font-family: "Bona Nova SC", serif;
+    }
+
+    form {
+        input {
+            border-radius: 5px;
+        }
+
+        #submit {
+            padding: 4px 8px;
+        }
+    }
+
+}
+
+.details {
+    width: 60%;
+    margin: auto;
+    margin-top: 3rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.841);
+    color: white;
+    padding: 20px 5px;
+    text-align: center;
+
+    h1 {
+        font-family: "Bona Nova SC", serif;
+    }
+
+    .tdetail {
+        width: 90%;
+        margin: auto;
+        text-align: left;
+
+        h2 {
+            display: flex;
+            font-family: "Comfortaa", sans-serif;
+            font-size: 1.5rem;
+            margin: 15px 0px;
+            padding: 0px 5px;
+        }
+
+        p {
+            font-family: "Comfortaa", sans-serif;
+            font-size: 1rem;
+            text-align: left;
+            align-self: center;
+        }
+    }
+}
+
+.delete {
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.771);
+    color: white;
+    margin: auto;
+    margin-top: 4rem;
+    text-align: center;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-family: "Comfortaa", sans-serif;
+
+    h1 {
+        font-family: "Bona Nova SC", serif;
+    }
+
+    .tdelete {
+        /* font-size: 10px; */
+
+        h1,
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        input {
+            border-radius: 5px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 15px;
+        }
+
+        a {
+            button {
+                width: 10.5%;
+                border-radius: 5px;
+            }
+        }
+    }
+
+}
+
+.history {
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.771);
+    color: white;
+    margin: auto;
+    margin-top: 4rem;
+    text-align: center;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-family: "Comfortaa", sans-serif;
+
+    h1 {
+        font-family: "Bona Nova SC", serif;
+    }
+
+    a {
+        button {
+            border-radius: 5px;
+            padding: 4px 7px;
+        }
+    }
+
+    .allhistory {
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+
+}
+
+.history {
+    background-color: rgba(0, 0, 0, 0.821);
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+
+    h1 {
+        font-family: "Bona Nova SC", serif;
+    }
+
+    #all {
+        display: flex;
+        justify-content: center;
+        width: 30%;
+        margin: auto;
+
+        a {
+            display: flex;
+            text-decoration: none;
+            background-color: rgba(255, 255, 255, 0.614);
+            color: rgb(37, 37, 37);
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin: 10px 10px;
+        }
+
+        a:hover {
+            color: white;
+        }
+    }
+
+    .history_head {
+        width: 90%;
+        margin: 10px 0px;
+        padding-top: 5px;
+        display: flex;
+        align-items: center;
+        font-family: "Bona Nova SC", serif;
+        background-color: rgba(255, 255, 255, 0.818);
+        color: black;
+        border-radius: 5px;
+        text-align: center;
+
+        #hid {
+            padding-left: 15px;
+            width: 6%;
+            font-size: 1.5rem;
+        }
+
+        #htitle {
+            width: 23%;
+            font-size: 1.5rem;
+        }
+
+        #hdesc {
+            width: 22%;
+            font-size: 1.5rem;
+        }
+
+        #hdate {
+            width: 20%;
+            font-size: 1.5rem;
+        }
+    }
+
+    .allhistory {
+        width: 90%;
+        margin: auto;
+        margin: 10px 0px;
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid white;
+        font-family: "Comfortaa", sans-serif;
+        text-align: center;
+        /* box-shadow: 7px 7px 17px rgb(93, 93, 93); */
+
+        #id {
+            padding-left: 15px;
+            width: 7%;
+            font-size: 1rem;
+        }
+
+        #title {
+            width: 32%;
+            font-size: 1.2rem;
+        }
+
+        #desc {
+            width: 32%;
+            font-size: 1.2rem;
+        }
+
+        #date {
+            width: 27%;
+            font-size: 1.2rem;
+        }
+
+
+        .historylinks {
+            margin: 10px 0px;
+            width: 40%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+            a {
+                background-color: rgba(255, 255, 255, 0.519);
+                margin: 0px 20px;
+                margin-bottom: 10px;
+                padding: 8px 14px;
+                border-radius: 10px;
+                text-decoration: none;
+                color: rgb(22, 22, 22);
+                font-size: 14px;
+            }
+
+            a:hover {
+                color: white;
+            }
+        }
+    }
+}
+
+.complete {
+    background-color: rgba(0, 0, 0, 0.821);
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+
+    h1 {
+        font-family: "Bona Nova SC", serif;
+    }
+
+
+    a {
+        display: flex;
+        text-decoration: none;
+        background-color: rgba(255, 255, 255, 0.614);
+        color: rgb(37, 37, 37);
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin: 10px 10px;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+
+    .complete_head {
+        width: 90%;
+        margin: 10px 0px;
+        padding-top: 5px;
+        display: flex;
+        align-items: center;
+        font-family: "Bona Nova SC", serif;
+        background-color: rgba(255, 255, 255, 0.818);
+        color: black;
+        border-radius: 5px;
+        text-align: center;
+
+        #cid {
+            padding-left: 15px;
+            width: 7%;
+            font-size: 1.5rem;
+        }
+
+        #ctitle {
+            width: 24%;
+            font-size: 1.5rem;
+        }
+
+        #cdesc {
+            width: 24%;
+            font-size: 1.5rem;
+        }
+
+        #cdate {
+            width: 24%;
+            font-size: 1.5rem;
+        }
+    }
+
+    .allcompleted {
+        width: 90%;
+        margin: auto;
+        margin: 10px 0px;
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid white;
+        font-family: "Comfortaa", sans-serif;
+        text-align: center;
+        /* box-shadow: 7px 7px 17px rgb(93, 93, 93); */
+
+        #id {
+            padding-left: 15px;
+            width: 8%;
+            font-size: 1.3rem;
+        }
+
+        #title {
+            width: 34%;
+            font-size: 1.3rem;
+        }
+
+        #desc {
+            width: 34%;
+            font-size: 1.1rem;
+        }
+
+        #date {
+            width: 30%;
+            font-size: 1.1rem;
+        }
+
+
+        .completedlinks {
+            margin: 10px 0px;
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                background-color: rgba(255, 255, 255, 0.519);
+                margin: 0px 20px;
+                margin-bottom: 10px;
+                padding: 8px 14px;
+                border-radius: 10px;
+                text-decoration: none;
+                color: rgb(22, 22, 22);
+                font-size: 14px;
+            }
+
+            a:hover {
+                color: white;
+            }
+        }
+    }
+}
+
+.contactus {
+    width: 50%;
+    margin: auto;
+    margin-top: 5rem;
+    background-color: rgba(0, 0, 0, 0.804);
+    border-radius: 10px;
+    color: white;
+    padding: 10px 10px;
+    align-items: center;
+    text-align: center;
+    font-family: "Comfortaa", sans-serif;
+
+    h1 {
+        font-family: "Bona Nova SC", serif;
+    }
+
+    form {
+        text-align: center;
+
+        div {
+            margin: auto;
+            text-align: center;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 10px;
+
+            label {
+                font-size: 1.2rem;
+            }
+
+            input {
+                border-radius: 5px;
+            }
+
+            textarea {
+                width: 40%;
+                height: 10vh;
+                border-radius: 5px;
+            }
+        }
+
+        button {
+            border-radius: 5px;
+            padding: 2px 12px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.582);
+            color: rgb(28, 28, 28);
+        }
+
+        button:hover {
+            color: white;
+        }
+    }
+}
+
+.csuccess {
+    width: 50%;
+    margin: auto;
+    margin-top: 5rem;
+    background-color: rgba(0, 0, 0, 0.753);
+    border-radius: 10px;
+    padding: 5rem 2rem;
+    color: white;
+    font-family: "Comfortaa", sans-serif;
+    text-align: center;
+}
+
+.profile {
+    width: 55%;
+    background-color: rgba(0, 0, 0, 0.753);
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 5rem;
+    padding: 2rem 2rem;
+    font-family: "Comfortaa", sans-serif;
+
+    h1 {
+        font-family: "Bona Nova SC", serif;
+        text-align: center;
+        color: white;
+    }
+
+    .pdetails {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 10px 0px;
+        padding-left: 40px;
+
+        h5 {
+            width: 50%;
+            text-align: left;
+            color: white;
+        }
+    }
+
+    .plinks {
+        margin: 10px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            background-color: rgba(255, 255, 255, 0.519);
+            margin: 0px 10px;
+            margin-bottom: 10px;
+            padding: 8px 14px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: rgb(22, 22, 22);
+            font-size: 14px;
+        }
+
+        a:hover {
+            color: white;
+        }
+    }
+}
+
+.updateprofile {
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.753);
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 5rem;
+    padding: 2rem 2rem;
+    font-family: "Comfortaa", sans-serif;
+
+    h1 {
+        font-family: "Bona Nova SC", serif;
+        text-align: center;
+        color: white;
+    }
+
+    .upform {
+        margin: auto;
+
+        form {
+            color: white;
+
+            .row {
+                margin-bottom: 20px;
+
+                label {
+                    margin-bottom: 5px;
+                    font-size: 1.2rem;
+                }
+            }
+
+            #submit {
+                margin-left: 24rem;
+                text-align: center;
+                align-items: center;
+                background-color: rgba(255, 255, 255, 0.599);
+                border: none;
+                border-radius: 5px;
+                padding: 4px 10px;
+            }
+
+            #submit:hover {
+                color: white;
+            }
+        }
+    }
+}
+
+.cpassword {
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.753);
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 5rem;
+    padding: 2rem 2rem;
+    font-family: "Comfortaa", sans-serif;
+
+    h1 {
+        font-family: "Bona Nova SC", serif;
+        text-align: center;
+        color: white;
+    }
+
+    form {
+        margin-top: 20px;
+        color: white;
+        text-align: center;
+
+        label {
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+
+        #cpsubmit {
+            margin: 10px 0px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            #submit {
+                text-align: center;
+                align-items: center;
+                background-color: rgba(255, 255, 255, 0.599);
+                border: none;
+                border-radius: 5px;
+                padding: 4px 10px;
+            }
+
+            #submit:hover {
+                color: white;
+            }
+
+            #cancel {
+                text-align: center;
+                align-items: center;
+                background-color: rgba(255, 255, 255, 0.599);
+                border: none;
+                border-radius: 5px;
+                padding: 4px 10px;
+                text-decoration: none;
+                color: black;
+            }
+
+            #cancel:hover {
+                color: white;
+            }
+        }
+    }
+}

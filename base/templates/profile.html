@@ -1,0 +1,23 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<div class="profile">
+    <h1>Profile</h1>
+    <div class="pdetails">
+        <h5>First name : {{request.user.first_name}}</h5>
+        <h5>Last name : {{request.user.last_name}}</h5>
+    </div>
+    <div class="pdetails">
+        <h5>Email : {{request.user.email}}</h5>
+        <h5>Username : {{request.user}}</h5>
+    </div>
+    <div class="plinks">
+        <a href="{% url 'updateprofile' request.user.id %}">Update profile</a>
+        <a href="{% url 'changepassword' request.user.id %}">Change password</a>
+        <a href="{% url 'deleteprofile' request.user.id %}">Delete profile</a>
+        <a href="{% url 'logout_' %}">Logout</a>
+    </div>
+</div>
+
+{% endblock content %}

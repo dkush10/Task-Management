@@ -1,0 +1,28 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+
+<center>
+    <div class="register">
+        <h1>Register form</h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+
+            <div id="registerinput">
+                <label for="">Username</label>
+                <input type="text" name="username" placeholder="Username"><br><br>
+
+                <label for="">Email</label>
+                <input type="emai" name="email" placeholder="Email"><br><br>
+
+                <label for="">Password</label>
+                <input type="password" name="password" placeholder="Password"><br><br>
+            </div>
+
+            <input id="submit" type="submit" value="register">
+        </form>
+    </div>
+</center>
+
+{% endblock content %}

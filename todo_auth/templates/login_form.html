@@ -1,0 +1,21 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<center>
+    <div class="loginform">
+        <h1>Log In</h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <label for="">Username </label>
+            <input type="text" name="username" placeholder="Enter your username"><br><br>
+
+            <label for="">Password </label>
+            <input type="password" name="password" placeholder="Password"><br><br>
+
+            <input id="submit" type="submit" value="Log In">
+        </form>
+    </div>
+</center>
+
+{% endblock content %}
